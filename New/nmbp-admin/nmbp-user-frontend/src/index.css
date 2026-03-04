@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans',
+}
+
+:root{
+  --bg:#f3f5f8;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#003366;
+  --pill:#e5f4ff;
+}
+
+
+*{box-sizing:border-box}
+
+
+
+/* GOV STRIP */
+.gov-strip {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.profile {
+  background: #1c5aa6;
+  padding: 6px 10px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+/* LAYOUT */
+.layout {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: #ffffff;
+  padding: 24px 18px;
+  border-right: 1px solid #e6eef6;
+  min-height: 100vh;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.sidebar li.active {
+  background: #e5f1fb;
+  font-weight: 600;
+  color: var(--accent);
+  box-shadow: inset 4px 0 0 var(--accent);
+}
+
+/* Sidebar specific (AppShell uses .sidebar, .sidebar-top, .nav-list, .nav-item) */
+.sidebar-top{ display:flex; align-items:center; gap:12px; padding-bottom:12px; margin-bottom:8px; }
+.sidebar-top .logo{ font-size:18px; font-weight:700; color:var(--accent); margin:0 }
+.nav-list{ display:flex; flex-direction:column; gap:6px; padding:0; margin:0 }
+.nav-item{ display:block; padding:10px 12px; border-radius:8px; color:#374151; text-decoration:none; width:100%; }
+.nav-item:hover{ background:#f6fbff }
+.nav-item.active{ background:#e5f1fb; font-weight:600; color:var(--accent); box-shadow: inset 4px 0 0 var(--accent); }
+
+/* Ensure sidebar content aligns top and has consistent spacing */
+.sidebar{ display:flex; flex-direction:column; align-items:flex-start }
+.sidebar .nav-list, .sidebar .sidebar-top{ width:100% }
+
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 30px 36px;
+}
