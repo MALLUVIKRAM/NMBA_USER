@@ -9,9 +9,8 @@ import call_icon1 from "../../assets/call_icon1.svg";
 
 const Facilities: React.FC = () => {
   return (
-    <div className="flex flex-col w-full min-h-screen bg-[#F7FAFD]">
-      {/* Header */}
-      <div className="px-6! py-6! bg-white">
+    <div className="bg-blue-600">
+      <div className="px-6! py-6! bg-red-700">
         <div className="b-t! gap-6! p-6!">
           <h1 className="text-[32px] font-semibold text-[#374151] mb-2!">
             Help Centres & Facilities
@@ -111,7 +110,7 @@ const Facilities: React.FC = () => {
             </div>
             <hr className="border-gray-200 mb-4!" />
             <div className="flex gap-4!">
-              <button className="flex-1 bg-[#0A2C53] text-[#FFFFFF] rounded-md pt-2! pb-2!  font-medium text-xs cursor-pointer">
+              <button className="flex-1 bg-[#0A2C53] text-[#FFFFFF] rounded-lg pt-2! pb-2! pr-4! pl-3! w-54.5 h-8! font-medium text-xs cursor-pointer">
                 <img
                   src={direction_icon}
                   alt="Direction Icon"
@@ -119,7 +118,7 @@ const Facilities: React.FC = () => {
                 />
                 Get Directions
               </button>
-              <button className="flex-1 border border-[#003366] text-[#0A2C53] bg-white rounded-md py-2! font-medium text-base cursor-pointer">
+              <button className="flex-1 border border-[#003366] text-[#0A2C53] bg-white rounded-lg pt-2! pb-2! pr-4! pl-3! w-54.5 h-8! font-medium text-xs cursor-pointer">
                 <img
                   src={call_icon1}
                   alt="Call Icon"
@@ -175,7 +174,7 @@ const Facilities: React.FC = () => {
             </div>
             <hr className="border-gray-200 mb-4!" />
             <div className="flex gap-3!">
-              <button className="flex-1 bg-[#0A2C53] text-[#FFFFFF] rounded-md pt-2! pb-2!  font-medium text-xs cursor-pointer">
+              <button className="flex-1 bg-[#0A2C53] text-[#FFFFFF] rounded-lg pt-2! pb-2! pr-4! pl-3! w-54.5 h-8!  font-medium text-xs cursor-pointer">
                 <img
                   src={direction_icon}
                   alt="Direction Icon"
@@ -183,7 +182,7 @@ const Facilities: React.FC = () => {
                 />
                 Get Directions
               </button>
-              <button className="flex-1 border border-[#003366] text-[#0A2C53] bg-white rounded-md py-2! font-medium text-base cursor-pointer">
+              <button className="flex-1 border border-[#003366] text-[#0A2C53] bg-white rounded-lg pt-2! pb-2! pr-4! pl-3! w-54.5 h-8! font-medium text-xs cursor-pointer">
                 <img
                   src={call_icon1}
                   alt="Call Icon"
@@ -233,7 +232,7 @@ const Facilities: React.FC = () => {
             </div>
             <hr className="border-gray-200 mb-4!" />
             <div className="flex gap-3!">
-              <button className="flex-1 bg-[#0A2C53] text-[#FFFFFF] rounded-md pt-2! pb-2!  font-medium text-xs cursor-pointer">
+              <button className="flex-1 bg-[#0A2C53] text-[#FFFFFF] rounded-lg pt-2! pb-2! pr-4! pl-3! w-54.5 h-8!  font-medium text-xs cursor-pointer">
                 <img
                   src={direction_icon}
                   alt="Direction Icon"
@@ -241,7 +240,7 @@ const Facilities: React.FC = () => {
                 />
                 Get Directions
               </button>
-              <button className="flex-1 border border-[#003366] text-[#0A2C53] bg-white rounded-md py-2! font-medium text-base cursor-pointer">
+              <button className="flex-1 border border-[#003366] text-[#0A2C53] bg-white rounded-lg pt-2! pb-2! pr-4! pl-3! w-54.5 h-8! font-medium text-xs cursor-pointer">
                 <img
                   src={call_icon1}
                   alt="Call Icon"

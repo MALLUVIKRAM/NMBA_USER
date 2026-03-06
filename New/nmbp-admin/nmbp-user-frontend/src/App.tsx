@@ -8,10 +8,10 @@ import EPledgeOathEN from "./components/EPledge/EPledgeOathEN";
 import Facilities from "./components/Facilities/Facilities";
 import Helpline from "./components/Helpline/Helpline";
 import AppShell from "./components/Layout/AppShell";
-import ActivityDetail from "./components/ActivitySnapshot/ActivityDetail";
 import CertificatePreview from "./components/EPledge/CertificatePreview";
 import RetrieveCertificateDownload from "./components/EPledge/RetrieveCertificateDownload";
 import RetrieveCertificate from "./components/EPledge/RetrieveCertificate";
+import ActivityDetails from "./components/ActivitySnapshot/ActivityDetail";
 
 function App() {
   return (
@@ -34,10 +34,10 @@ function App() {
           }
         />
         <Route
-          path="/activity/:id"
+          path="/ActivityDetails"
           element={
             <AppShell>
-              <ActivityDetail />
+              <ActivityDetails />
             </AppShell>
           }
         />

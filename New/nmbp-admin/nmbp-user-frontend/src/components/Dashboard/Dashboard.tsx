@@ -8,6 +8,10 @@ import communityLogo from "../../assets/community_logo.svg";
 import governanceLogo from "../../assets/governance_logo.svg";
 import targetLogo from "../../assets/target_logo.svg";
 import arrow_right_icon from "../../assets/arrow_right_icon.svg";
+import map_icon from "../../assets/map_icon.svg";
+import calendar_icon from "../../assets/calendar_icon.svg";
+import forward_arrow from "../../assets/forward_arrow.svg";
+import dashboard_map from "../../assets/dashboard_map.svg";
 
 const Dashboard: React.FC = () => {
   const navigate = useNavigate();
@@ -98,20 +102,20 @@ const Dashboard: React.FC = () => {
         NUMBER OF PROGRAMMES
       </h3>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8!">
-        <article className="bg-[#F8FAFC] shadow-sm border border-[#E5EAF2] flex flex-col p-8! gap-4! rounded-2xl opacity-100">
-          <div className="flex items-center gap-2! mb-4!">
+        <article className="bg-[#FFFFFF] shadow-sm border border-[#E5E7EB] flex flex-col p-8! gap-4! rounded-2xl opacity-100">
+          <div className="flex items-center gap-2! mb-1!">
             <span className="inline-flex items-center justify-center w-9 h-9 bg-green-50 ">
               <img
                 src={eduLogo}
-                alt="Educational Institutions Logo"
+                alt="Educational & Youth Logo"
                 className="w-9 h-9 object-contain"
               />
             </span>
             <span className="text-lg font-semibold text-[#1A2C47]">
-              Educational Institutions
+              Educational & Youth
             </span>
           </div>
-          <hr className="w-full border-t border-[#E5EAF2] mb-4!" />
+          <hr className="w-full border-t border-[#E5E7EB] mb-4!" />
           <div className="grid grid-cols-2 gap-x-8! gap-y-2!">
             <div className="flex flex-col">
               <span className="text-xs font-medium text-[#6B7280]">
@@ -163,12 +167,12 @@ const Dashboard: React.FC = () => {
             </div>
           </div>
         </article>
-        <article className="bg-[#F8FAFC] shadow-sm border border-[#E5EAF2] flex flex-col p-8! gap-4! rounded-2xl opacity-100">
-          <div className="flex items-center gap-2! mb-4!">
+        <article className="bg-[#FFFFFF] shadow-sm border border-[#E5E7EB] flex flex-col p-8! gap-4! rounded-2xl opacity-100">
+          <div className="flex items-center gap-2! mb-1!">
             <span className="inline-flex items-center justify-center w-9 h-9 bg-green-50 ">
               <img
                 src={communityLogo}
-                alt="Community Logo"
+                alt="Community Outreach Logo"
                 className="w-9 h-9 object-contain"
               />
             </span>
@@ -176,7 +180,7 @@ const Dashboard: React.FC = () => {
               Community Outreach
             </span>
           </div>
-          <hr className="w-full border-t border-[#E5EAF2] mb-4!" />
+          <hr className="w-full border-t border-[#E5E7EB] mb-4!" />
           <div className="grid grid-cols-2 gap-x-8! gap-y-2!">
             <div className="flex flex-col">
               <span className="text-xs font-medium text-[#6B7280]">
@@ -228,8 +232,8 @@ const Dashboard: React.FC = () => {
             </div>
           </div>
         </article>
-        <article className="bg-[#F8FAFC] shadow-sm border border-[#E5EAF2] flex flex-col p-8! gap-4! rounded-2xl opacity-100">
-          <div className="flex items-center gap-2! mb-4!">
+        <article className="bg-[#FFFFFF] shadow-sm border border-[#E5E7EB] flex flex-col p-8! gap-4! rounded-2xl opacity-100">
+          <div className="flex items-center gap-2! mb-1!">
             <span className="inline-flex items-center justify-center w-9 h-9 bg-yellow-50 ">
               <img
                 src={governanceLogo}
@@ -241,7 +245,7 @@ const Dashboard: React.FC = () => {
               Governance & Local Bodies
             </span>
           </div>
-          <hr className="w-full border-t border-[#E5EAF2] mb-4" />
+          <hr className="w-full border-t border-[#E5E7EB] mb-4" />
           <div className="grid grid-cols-2 gap-x-8 gap-y-2">
             <div className="flex flex-col">
               <span className="text-xs font-medium text-[#6B7280]">
@@ -277,20 +281,20 @@ const Dashboard: React.FC = () => {
             </div>
           </div>
         </article>
-        <article className="bg-[#F8FAFC] shadow-sm border border-[#E5EAF2] flex flex-col p-8! gap-4! rounded-2xl opacity-100">
-          <div className="flex items-center gap-2! mb-4!">
-            <span className="inline-flex items-center justify-center w-9 h-9 bg-red-50 ">
+        <article className="bg-[#FFFFFF] shadow-sm border border-[#E5E7EB] flex flex-col p-8! gap-4! rounded-2xl opacity-100">
+          <div className="flex items-center gap-2! mb-1!">
+            <span className="inline-flex items-center justify-center w-9 h-9 bg-red-50 rounded-sm! ">
               <img
                 src={targetLogo}
                 alt="Targeted Interventions Logo"
-                className="w-9 h-9 object-contain"
+                className="w-9 h-9 object-contain rounded-sm! "
               />
             </span>
             <span className="text-lg font-semibold text-[#1A2C47]">
               Targeted Interventions
             </span>
           </div>
-          <hr className="w-full border-t border-[#E5EAF2] mb-4" />
+          <hr className="w-full border-t border-[#E5E7EB] mb-4" />
           <div className="grid grid-cols-2 gap-x-8 gap-y-2">
             <div className="flex flex-col">
               <span className="text-xs font-medium text-[#6B7280]">
@@ -336,89 +340,166 @@ const Dashboard: React.FC = () => {
         </article>
       </section>
       {/* Recent Activities Across India Section */}
-      <h3 className="text-lg font-semibold mt-8! mb-4!">
-        RECENT ACTIVITIES ACROSS INDIA
-      </h3>
-      <div className="flex justify-between items-center mb-4!">
-        <span></span>
+      <div className="flex justify-between items-center mb-0 gap-4! w-5xl ">
+        <h3 className="text-lg font-semibold mt-8! mb-4!">
+          RECENT ACTIVITIES ACROSS INDIA
+        </h3>
+
+        <hr className="flex-1 border-t border-[#E5E7EB]" />
+
         <a
           href="#"
-          className="text-[#1763C6] text-sm font-medium hover:underline"
+          className="text-[#1763C6] text-sm font-medium hover:underline cursor-pointer flex gap-3! justify-center"
         >
-          View all Activities
+          View all Activities <img src={arrow_right_icon} alt="arrow" />
         </a>
       </div>
       <section className="grid grid-cols-1 md:grid-cols-3 gap-4! mb-8!">
         {/* Card 1 */}
-        <div className="bg-white rounded-lg shadow border border-[#E5EAF2] flex flex-col gap-3! opacity-100">
+        <div className="bg-white rounded-lg shadow border border-[#E5EAF2] flex flex-col gap-3! opacity-100 cursor-pointer">
           <img
             src={awarenessRally}
             alt="AwarenessRally"
             className="rounded-t-lg w-full object-cover h-[196.18px]"
           />
-          <div className="flex flex-col flex-1 p-3!">
-            <p className="inline-block px-2! py-1! border border-[#1763C6] text-[#1763C6] bg-blue-50 text-xs font-medium  pr-sm! pl-sm! rounded-[1vw] mb-2 radius-md w-fit text-center tracking-[0.1px]">
+          <div className="flex flex-col flex-1 p-4! gap-3!">
+            <p className=" border border-[#7AAFF8] text-[#1558B0] bg-[#D2E3FC] text-[11px] font-medium  pt-0.5! pb-0.5! pr-2! pl-2! gap-0.5! rounded-xl mb-2 radius-md w-fit">
               Awareness Rally
             </p>
-            <h4 className="text-base font-semibold text-[#1A2C47] mb-1">
+            <h4 className="text-base font-medium text-[#374151] mb-1!">
               Alandi Student Awareness Drive
             </h4>
             <hr className="w-full border-t border-[#E5E7EB] mb-1!" />
             <div className="flex justify-between">
-              <div className="flex items-center text-xs text-[#6B7280] gap-2 mb-1">
-                <span>Maharashtra</span>
+              <div className="flex items-center text-xs text-[#6B7280] gap-1! mb-1">
+                <img
+                  src={map_icon}
+                  alt="Map Icon"
+                  className="w-4! h-4! justify-center"
+                />
+                <span className="text-[11px] text-[#6B7280] font-medium">
+                  Pune,Maharashtra
+                </span>
               </div>
-              <p className="text-xs text-[#6B7280]">20 Jan 2025</p>
+              <div className="flex items-center text-xs text-[#6B7280] gap-2 mb-1">
+                <img
+                  src={calendar_icon}
+                  alt="Calendar Icon"
+                  className="w-4! h-4! justify-center"
+                />
+                <span className="text-[11px] text-[#6B7280] font-medium">
+                  20 Jan 2025
+                </span>
+              </div>
             </div>
           </div>
         </div>
         {/* Card 2 */}
-        <div className="bg-white rounded-lg shadow border border-[#E5EAF2] flex flex-col gap-3! opacity-100">
+        <div className="bg-white rounded-lg shadow border border-[#E5EAF2] flex flex-col gap-3! opacity-100 cursor-pointer">
           <img
             src={schoolProgramme}
             alt="School Programme"
             className="rounded-t-lg w-full object-cover h-[196.18px]"
           />
-          <div className="p-4! flex flex-col flex-1">
-            <p className=" border border-[ #81C784] bg-[#F1F5F9] text-[#22C55E] text-xs font-semibold px-2! py-1! rounded-[1vw] mb-2 radius-md w-fit text-center tracking-[0.1px]">
+          <div className="p-4! flex flex-col flex-1 gap-3!">
+            <p className="bg-[#C8E6C9] text-[#27682A] font-medium text-xs rounded-xl px-3! py-1! border border-[#81C784] justify-center w-fit ">
               School Programme
             </p>
-            <hr className="w-full border-t border-[#E5E7EB] mb-1!" />
-            <h4 className="text-base font-semibold text-[#1A2C47] mb-1">
-              Government School Pledge{" "}
+            <h4 className="text-base font-medium text-[#374151] mb-1!">
+              Government School Pledge
             </h4>
-            <div className="flex flex-rowitems-center text-xs text-[#6B7280] gap-2 mb-1">
-              <span>Indore, Madhya Pradesh</span>
+            <hr className="w-full border-t border-[#E5E7EB] mb-1!" />
+            <div className="flex justify-between">
+              <div className="flex items-center text-xs text-[#6B7280] gap-1! mb-1">
+                <img
+                  src={map_icon}
+                  alt="Map Icon"
+                  className="w-4! h-4! justify-center"
+                />
+                <span className="text-[11px] text-[#6B7280] font-medium">
+                  Indore,Madhya Pradesh
+                </span>
+              </div>
+              <div className="flex items-center text-xs text-[#6B7280] gap-2 mb-1">
+                <img
+                  src={calendar_icon}
+                  alt="Calendar Icon"
+                  className="w-4! h-4! justify-center"
+                />
+                <span className="text-[11px] text-[#6B7280] font-medium">
+                  24 Jan 2025
+                </span>
+              </div>
             </div>
-            <p className="text-xs text-[#6B7280]">20 Jan 2025</p>
           </div>
         </div>
 
-        <div className="bg-white rounded-lg shadow border border-[#E5EAF2] flex flex-col gap-3! opacity-100">
+        <div className="bg-white rounded-lg shadow border border-[#E5EAF2] flex flex-col gap-3! opacity-100 cursor-pointer">
           <img
             src={panchayatSabha}
             alt="Panchayat Sabha"
             className="rounded-t-lg w-full object-cover h-[196.18px]"
           />
-          <div className="p-4! flex flex-col flex-1">
-            <p className=" px-2! py-1! border border-[#1763C6] bg-[#F1F5F9] text-[#1763C6] text-xs font-semibold pt-xxs pb-xxs pr-sm pl-sm rounded-[1vw] mb-2 radius-md w-fit text-center tracking-[0.1px]">
+          <div className="p-4! flex flex-col flex-1 gap-3!">
+            <p className=" px-2! py-1! border border-[#7AAFF8] bg-[#D2E3FC] text-[#1558B0] text-xs font-semibold pt-xxs pb-xxs pr-sm pl-sm  mb-2 radius-md w-fit text-center rounded-xl">
               Panchayat Sabha
             </p>
-            <hr className="w-full border-t border-[#E5E7EB] mb-1!" />
-            <h4 className="text-base font-semibold text-[#1A2C47] mb-1!">
+            <h4 className="text-base font-medium text-[#374151] mb-1!">
               Village Meeting
             </h4>
-            <div className="flex items-center text-xs text-[#6B7280] gap-2! mb-1!">
-              <span>Sirc, Karnataka</span>
+            <hr className="w-full border-t border-[#E5E7EB] mb-1!" />
+            <div className="flex justify-between">
+              <div className="flex items-center text-xs text-[#6B7280] gap-1! mb-1">
+                <img
+                  src={map_icon}
+                  alt="Map Icon"
+                  className="w-4! h-4! justify-center"
+                />
+                <span className="text-[11px] text-[#6B7280] font-medium">
+                  Sikar, Rajasthan
+                </span>
+              </div>
+              <div className="flex items-center text-xs text-[#6B7280] gap-1! mb-1">
+                <img
+                  src={calendar_icon}
+                  alt="Calendar Icon"
+                  className="w-4! h-4! justify-center"
+                />
+                <span className="text-[11px] text-[#6B7280] font-medium">
+                  20 Jan 2025
+                </span>
+              </div>
             </div>
-            <p className="text-xs text-[#6B7280]">20 Jan 2025</p>
           </div>
         </div>
       </section>
-
-      <footer className="bg-[#123c6a] text-white text-center py-4! mt-8! rounded-lg">
-        © 2025 Government of India
-      </footer>
+      <div className="bg-[#E8F0FE] rounded-3xl flex md:flex-row  items-center gap-3! w-273! h-75!">
+        <div className="flex flex-col items-left gap-4! p-10! w-136.5 h-64!">
+          <div>
+            <h3 className="font-medium text-[#003366] text-[24px]">
+              Find De-addiction Facilities Near You
+            </h3>
+            <p className="text-[#6B7280] text-[16px] font-regular mt-2!">
+              Locate verified Integrated Rehabilitation Centres (IRCA), Outreach
+              Centres (ODIC), and Addiction Treatment Facilities (ATF) in your
+              district.
+            </p>
+          </div>
+          <button className="bg-[#003366] text-[14px] font-medium text-[#FFFFFF] gap-2! pt-2! pr-4! pb-2! pl-6! rounded-lg flex items-center cursor-pointer border w-45 h-10!">
+            View Facility Map
+            <img
+              src={forward_arrow}
+              alt="arrow"
+              className="inline-block  w-4! h-4!"
+            />
+          </button>
+        </div>
+        <img
+          src={dashboard_map}
+          alt="map"
+          className="w-136.5 h-75! rounded-tr-3xl rounded-br-3xl object-cover"
+        />
+      </div>
     </div>
   );
 };
