@@ -3,10 +3,10 @@ import schoolProgramme from "../../assets/school_programme.svg";
 import awarenessRally from "../../assets/awareness_rally.svg";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import eduLogo from "../../assets/edu_logo.svg";
-import communityLogo from "../../assets/community_logo.svg";
-import governanceLogo from "../../assets/governance_logo.svg";
-import targetLogo from "../../assets/target_logo.svg";
+import eduation_icon from "../../assets/education_icon.svg";
+import campaign_icon from "../../assets/campaign_icon.svg";
+import goverance_icon from "../../assets/goverance_icon.svg";
+import target_icon from "../../assets/target_icon1.svg";
 import arrow_right_icon from "../../assets/arrow_right_icon.svg";
 import map_icon from "../../assets/map_icon.svg";
 import calendar_icon from "../../assets/calendar_icon.svg";
@@ -19,8 +19,8 @@ const Dashboard: React.FC = () => {
     navigate("/epledge");
   };
   return (
-    <div className="bg-[--bg] text-[#1f2937] p-6! w-full min-w-0 min-h-screen">
-      <div className="flex flex-col md:flex-row items-center justify-between bg-linear-to-r from-[#15784C] to-[#198754] rounded-xl shadow p-6! mb-6!">
+    <div className="bg-[--bg] text-[#1f2937] p-6! gap-12! w-full min-w-0 min-h-screen ">
+      <div className="flex flex-col md:flex-row items-center justify-between bg-linear-to-r from-[#198754] to-[#15784C] rounded-[20px] shadow w-273! h-34! pt-8! pb-8! pr-10! pl-10! border mb-6! border-[#E5E7EB]">
         <div className="mb-4! md:mb-0!">
           <h1 className="text-[32px] font-medium m-0! text-white">
             Nasha Mukt Bharat Abhiyaan
@@ -97,22 +97,24 @@ const Dashboard: React.FC = () => {
           <p className="text-[#374151] font-semibold text-3xl">16,09,943</p>
         </div>
       </div>
+      <div className="gap-3! flex justify-between ">
+        <h3 className="text-[16px] font-semibold mt-8! mb-4! text-[#374151] ">
+          NUMBER OF PROGRAMMES
+        </h3>
+      </div>
 
-      <h3 className="text-lg font-semibold mt-8! mb-4!">
-        NUMBER OF PROGRAMMES
-      </h3>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8!">
-        <article className="bg-[#FFFFFF] shadow-sm border border-[#E5E7EB] flex flex-col p-8! gap-4! rounded-2xl opacity-100">
+        <article className="bg-[#FFFFFF] shadow-sm border border-[#E5E7EB] flex flex-col p-5! gap-4! rounded-xl opacity-100 w-133.5! h-80.5! ">
           <div className="flex items-center gap-2! mb-1!">
-            <span className="inline-flex items-center justify-center w-9 h-9 bg-green-50 ">
+            <span className="inline-flex items-center justify-center w-9 h-9 bg-[#E8F0FE] rounded-sm! ">
               <img
-                src={eduLogo}
+                src={eduation_icon}
                 alt="Educational & Youth Logo"
-                className="w-9 h-9 object-contain"
+                className="w-5 h-5 object-contain "
               />
             </span>
             <span className="text-lg font-semibold text-[#1A2C47]">
-              Educational & Youth
+              Education & Youth
             </span>
           </div>
           <hr className="w-full border-t border-[#E5E7EB] mb-4!" />
@@ -167,13 +169,13 @@ const Dashboard: React.FC = () => {
             </div>
           </div>
         </article>
-        <article className="bg-[#FFFFFF] shadow-sm border border-[#E5E7EB] flex flex-col p-8! gap-4! rounded-2xl opacity-100">
+        <article className="bg-[#FFFFFF] shadow-sm border border-[#E5E7EB] flex flex-col p-5! gap-4! rounded-2xl opacity-100 w-133.5! h-80.5!">
           <div className="flex items-center gap-2! mb-1!">
-            <span className="inline-flex items-center justify-center w-9 h-9 bg-green-50 ">
+            <span className="inline-flex items-center justify-center w-9 h-9 bg-[#E8F5E9] rounded-sm! ">
               <img
-                src={communityLogo}
+                src={campaign_icon}
                 alt="Community Outreach Logo"
-                className="w-9 h-9 object-contain"
+                className="w-5 h-5 object-contain"
               />
             </span>
             <span className="text-lg font-semibold text-[#1A2C47]">
@@ -232,13 +234,13 @@ const Dashboard: React.FC = () => {
             </div>
           </div>
         </article>
-        <article className="bg-[#FFFFFF] shadow-sm border border-[#E5E7EB] flex flex-col p-8! gap-4! rounded-2xl opacity-100">
+        <article className="bg-[#FFFFFF] shadow-sm border border-[#E5E7EB] flex flex-col p-5! gap-4! w-133.5! h-80.5! rounded-2xl opacity-100">
           <div className="flex items-center gap-2! mb-1!">
-            <span className="inline-flex items-center justify-center w-9 h-9 bg-yellow-50 ">
+            <span className="inline-flex items-center justify-center w-9 h-9 bg-[#FFF4E5] rounded-sm! ">
               <img
-                src={governanceLogo}
+                src={goverance_icon}
                 alt="Governance Logo"
-                className="w-9 h-9 object-contain"
+                className="w-5 h-5 object-contain"
               />
             </span>
             <span className="text-lg font-semibold text-[#1A2C47]">
@@ -281,13 +283,13 @@ const Dashboard: React.FC = () => {
             </div>
           </div>
         </article>
-        <article className="bg-[#FFFFFF] shadow-sm border border-[#E5E7EB] flex flex-col p-8! gap-4! rounded-2xl opacity-100">
+        <article className="bg-[#FFFFFF] shadow-sm border border-[#E5E7EB] flex flex-col p-5! gap-4! w-133.5! h-80.5! rounded-2xl opacity-100">
           <div className="flex items-center gap-2! mb-1!">
-            <span className="inline-flex items-center justify-center w-9 h-9 bg-red-50 rounded-sm! ">
+            <span className="inline-flex items-center justify-center w-9 h-9 bg-[#FDECEA] rounded-sm! ">
               <img
-                src={targetLogo}
+                src={target_icon}
                 alt="Targeted Interventions Logo"
-                className="w-9 h-9 object-contain rounded-sm! "
+                className="w-5 h-5 object-contain rounded-sm! "
               />
             </span>
             <span className="text-lg font-semibold text-[#1A2C47]">

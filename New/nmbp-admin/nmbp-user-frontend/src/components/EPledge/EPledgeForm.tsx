@@ -5,6 +5,7 @@ import "./EPledgeOathEN.css";
 import back_arrow from "../../assets/back_arrow.svg";
 import forward_arrow from "../../assets/forward_arrow.svg";
 import required_asterix_icon from "../../assets/required_asterix_icon.svg";
+import pulse_icon from "../../assets/pulse_icon.svg";
 const EPledgeform: React.FC = () => {
   const navigate = useNavigate();
 
@@ -15,7 +16,12 @@ const EPledgeform: React.FC = () => {
           <img src={BannerImage} alt="banner" className="rounded-2xl " />
           <div className="w-200 absolute top-3/4 left-1/2 -translate-x-1/2  bg-[#FFFFFF] mx-2! rounded-3xl mb-2! border-[#E5E7EB] border">
             <div className="gap-6! mt-0! p-6! bg-[#F9FAFB] rounded-tl-3xl rounded-tr-3xl">
-              <span className="bg-[#C8E6C9] font-medium text-sm rounded-xl  px-2! py-1! text-[#27682A] border border-[#81C784]">
+              <span className="bg-[#C8E6C9] font-medium text-sm rounded-2xl  px-3! py-2! text-[#27682A] border border-[#81C784]">
+                 <img
+                  src={pulse_icon}
+                  alt="pulse"
+                  className="inline-block mb-1! ml-0! mr-1! w-2! h-2! items-start "
+                />{" "}
                 500 Pledges Taken Today
               </span>
               <h3 className="pledge-title mt-3!">

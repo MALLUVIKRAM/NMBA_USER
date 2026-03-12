@@ -9,8 +9,8 @@ import call_icon1 from "../../assets/call_icon1.svg";
 
 const Facilities: React.FC = () => {
   return (
-    <div className="bg-blue-600">
-      <div className="px-6! py-6! bg-red-700">
+    <div>
+      <div className="px-6! py-6!">
         <div className="b-t! gap-6! p-6!">
           <h1 className="text-[32px] font-semibold text-[#374151] mb-2!">
             Help Centres & Facilities
@@ -50,9 +50,10 @@ const Facilities: React.FC = () => {
         {/* Facilities List */}
         <div className="w-lg h-11/12! mt-6! bg-[#FFFFFF]">
           <div className="mb-4! ">
-            <span className="text-[#212529] font-semibold text-lg gap-2! pt-4! pb-4! pl-6! pr-6!  ">
+            <span className="text-[#212529] font-semibold text-lg gap-2! px-6! py-4! mt-10!  ">
               Facilities (3)
             </span>
+            <hr className="border-gray-200 mb-4!" />
           </div>
           {/* Facility Card 1 */}
           <div className="border-t-0! border-[#E5E7EB]  bg-white p-5! mb-5! w-full h-auto">

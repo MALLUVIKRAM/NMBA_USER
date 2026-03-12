@@ -13,22 +13,10 @@ import print_icon from "../../assets/print_icon.svg";
 
 const CertificatePreview: React.FC = () => {
   return (
-    <div className="epledge-page p-5">
+    <div className="epledge-page p-5!">
       <div className="w-285! h-275 p-6!">
-        <div className="bg-[#219653] flex flex-col items-center justify-center rounded-[20px] ">
-          <div
-            style={{
-              color: "#fff",
-              borderRadius: 18,
-              padding: "32px 24px 24px 24px",
-
-              width: "90%",
-              height: 400,
-              margin: "0 auto 32px auto",
-              textAlign: "center",
-              position: "relative",
-            }}
-          >
+        <div className="bg-[#27682A] flex flex-col items-center justify-center rounded-[20px] border border-[#F3F4F6]">
+          <div className="text-[#FFFFFF] rounded-[18px] pt-8! pb-6! px-6! w-[90%] h-100 mx-auto mb-8 text-center relative">
             <img
               src={certificateTick}
               alt="Success Tick"
@@ -50,7 +38,7 @@ const CertificatePreview: React.FC = () => {
               generated.
             </p>
 
-            <div className="bg-white rounded-2xl shadow-lg p-8! w-213 h-197! m-5 absolute left-1/2 -translate-x-1/2">
+            <div className="bg-white rounded-2xl shadow-lg p-8! w-213 h-197.25! mt-8! absolute left-1/2 -translate-x-1/2">
               <img
                 src={certificateTemplate}
                 alt="Certificate"
@@ -94,9 +82,14 @@ const CertificatePreview: React.FC = () => {
                   />
                 </div>
               </div>
+              <hr className="border-[#E5E7EB] mb-6!" />
               <div className="flex flex-row justify-center gap-4 mt-6! ">
                 <button className="cursor-pointer!">
-                  <img src={print_icon} alt="Print" className="w-14 h-14" />
+                  <img
+                    src={print_icon}
+                    alt="Print"
+                    className="w-14.5! h-14.5!"
+                  />
                 </button>
                 <button className="rounded-lg text-[#602EF9] flex border border-[#602EF9] gap-2! bg-white pt-4! pr-6! pb-4! pl-8! w-89.5 h-14! items-center justify-center cursor-pointer">
                   Save to DigiLocker{" "}

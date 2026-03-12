@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./EPledgeOathEN.css";
 import BannerImage from "../../assets/banner_image.svg";
+import pulse_icon from "../../assets/pulse_icon.svg";
 
 const EPledgeOathEN: React.FC = () => {
   const navigate = useNavigate();
@@ -14,21 +15,26 @@ const EPledgeOathEN: React.FC = () => {
         {" "}
         <div className=" relative">
           <img src={BannerImage} alt="banner" className="rounded-2xl w-273" />
-          <div className="rounded-3xl absolute top-3/4 left-1/2 -translate-x-1/2 bg-[#FFFFFF]  w-213 h-135 ">
+          <div className="rounded-3xl absolute top-3/4 left-1/2 -translate-x-1/2 bg-[#FFFFFFFF]  w-213 h-148 ">
             <div className="  py-5! mt-0! flex px-12! bg-[#F9FAFB] rounded-tl-3xl rounded-tr-3xl ">
               <div style={{ flex: 1 }}>
-                <span className="bg-[#C8E6C9] font-medium text-sm rounded-xl  px-3! py-2! text-[#27682A] border border-[#81C784] w-52 h-7!">
+                <span className="bg-[#C8E6C9] font-medium text-sm rounded-2xl  px-3! py-2! text-[#27682A] border border-[#81C784] w-52 h-7!">
+                  <img
+                    src={pulse_icon}
+                    alt="pulse"
+                    className="inline-block mb-1! ml-0! mr-1! w-2! h-2! items-start "
+                  />{" "}
                   {englishSelected
                     ? "500 Pledges Taken Today"
                     : "आज तक 500 प्रतिज्ञाएँ ली गईं"}
                 </span>
-                <h3 className="pledge-title mt-3!">
+                <h3 className="pledge-title mt-3! text-[24px] text-[#374151] font-semibold">
                   {englishSelected
                     ? "Nasha Mukt Bharat Abhiyaan Pledge "
                     : "नशा मुक्त भारत अभियान प्रतिज्ञा"}
                 </h3>
               </div>
-              <div className="flex gap-3! items-center">
+              <div className="flex gap-0! items-center">
                 <button
                   className={`${englishSelected ? "lang-btn primary" : "lang-btn"}`}
                   onClick={() => {
@@ -107,7 +113,7 @@ const EPledgeOathEN: React.FC = () => {
                   <div className="text-[#6B7280] text-[14px] font-normal">
                     {englishSelected
                       ? "Taken the pledge before?"
-                      : "क्या आपने पहले शपथ ली है?"}
+                      : "पहले प्रतिज्ञा ली थी?"}
                   </div>
                   <div className="text-[#003366] text-[14px] font-medium">
                     <div
@@ -116,7 +122,7 @@ const EPledgeOathEN: React.FC = () => {
                     >
                       {englishSelected
                         ? "Download your certificate directly."
-                        : "अपने प्रमाणपत्र को सीधे डाउनलोड करें।"}
+                        : "अपना प्रमाणपत्र सीधे डाउनलोड करें।"}
                     </div>
                   </div>
                 </div>
